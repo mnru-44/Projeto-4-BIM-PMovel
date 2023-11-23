@@ -20,11 +20,10 @@ export function Rotas() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-            <Stack.Screen name='MainPage' component={MainPage} options={{ headerShown: false }} />
-
                 <Stack.Screen name='Home' component={Home} options={{ headerShown: false }} />
                 <Stack.Screen name='Login' component={Login} options={{ title: '' }} />
                 <Stack.Screen name='Cadastrar' component={Cadastrar} options={{ headerShown: false }} />
+                <Stack.Screen name='MainPage' component={MainPage} options={{ headerShown: false }} />
                 <Stack.Screen name='PagProduto' component={PagProduto} options={{ title: 'CM Cosméticos' }} />
                 <Stack.Screen name='Categorias' component={Categorias} options={{ headerShown: false }} />
                 <Stack.Screen name='Eudora' component={ScrollViewEudora} options={{ title: '' }} />

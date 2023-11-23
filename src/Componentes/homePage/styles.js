@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     homeBotao: {
-        backgroundColor: "#db3022", 
+        backgroundColor: "#792964", 
         width: "90%", 
         paddingHorizontal: 10,
         height: "48px", 

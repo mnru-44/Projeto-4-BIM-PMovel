@@ -64,7 +64,7 @@ export const styles = StyleSheet.create({
         marginTop: "20px",
     },
     botaoEstoque: {
-        backgroundColor: "#db3022", 
+        backgroundColor: "#792964", 
         width: "90%", 
         paddingHorizontal: 10,
         height: "48px", 

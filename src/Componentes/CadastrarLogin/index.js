@@ -122,6 +122,11 @@ export function Cadastrar({ navigation }) {
                 style={styles.botao} onPress={() => realizarCadastro()}>
                 <Text style={styles.textoButton}>Cadastrar</Text>
             </TouchableOpacity>
+            <Text style={styles.texto}> Já tem uma conta?
+                <Text style={styles.textoLink}
+                    onPress={() => navigation.navigate('Login')}> Efetue o Login
+                </Text>
+            </Text>
             <Snackbar visible={statusSnakbar} onDismiss={() => setStatusSnakbar(false)} duration={2000}
                 action={{
                     label: 'OK',

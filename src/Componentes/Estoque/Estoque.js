@@ -33,13 +33,15 @@ export function Estoque({ navigation }) {
                         {AllProdutos.map((item, index) => (
                             <View key={index} style={{ margin: 10, marginRight: 17 }}>
                                 <Image source={{ uri: item.imageUrl }} style={{ width: 148, height: 184, borderRadius: 8, shadowColor: "rgba(211, 38, 38, 0.25)", shadowOffset: { width: 0, height: 4 }, shadowRadius: 8, elevation: 8, shadowOpacity: 1, }} />
-                                <View style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                                <View style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                                     <View>
                                         <Text style={{ fontSize: 11, color: "#9B9B9B", fontFamily: "Raleway-Regular", marginTop: 26 }}>{Capitalize(item.pasta)}</Text>
-                                        <Text style={{ fontSize: 20, color: "#222222", fontFamily: "Raleway-Italic", marginTop: 4 }}>{item.nome}</Text>
-                                        <Text style={{ fontSize: 18, color: "#DB3022", fontFamily: "Raleway-Medium", marginTop: 4 }}>R$ {item.preco}</Text>
+                                        <View style={{width: 145}}>
+                                            <Text style={{fontSize: 20, color: "#222222", fontFamily: "Raleway-Italic", marginTop: 4}}>{item.nome}</Text>
+                                        </View>
                                     </View>
-                                    <View style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%', paddingTop: 26}}>
+                                    <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', height: '100%', paddingTop: 10}}>
+                                        <Text style={{ fontSize: 18, color: "#DB3022", fontFamily: "Raleway-Medium", marginTop: 4, marginRight: 18 }}>R$ {item.preco}</Text>
                                         <TouchableOpacity style={{ height: 30, width: 30, backgroundColor: '#6495ED', borderRadius: 8, padding: 8, alignItems: 'center', justifyContent: 'center'}} onPress={() => navigation.navigate('AddProduto', item)}>
                                             <Icon
                                                 name={'edit'}

@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
         shadowOpacity: 1,
     },
     botao: {
-        backgroundColor: "#db3022", 
+        backgroundColor: "#792964", 
         width: "90%", 
         paddingHorizontal: 10,
         height: "48px", 
