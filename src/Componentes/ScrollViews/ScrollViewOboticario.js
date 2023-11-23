@@ -32,7 +32,9 @@ export function ScrollViewOboticario() {
 								<View style={{ margin: 10, marginRight: 17 }}>
 									<Image source={{ uri: item.imageUrl }} style={{ width: 148, height: 184, borderRadius: 8, shadowColor: "rgba(211, 38, 38, 0.25)", shadowOffset: {width: 0,	height: 4},	shadowRadius: 8, elevation: 8, shadowOpacity: 1, }} />
 									<Text style={{fontSize: 11, color: "#9B9B9B", fontFamily: "Raleway-Regular", marginTop: 26}}>{Capitalize(item.pasta)}</Text>
-									<Text style={{fontSize: 20, color: "#222222", fontFamily: "Raleway-Italic", marginTop: 4}}>{item.nome}</Text>
+									<View style={{width: 145}}>
+										<Text style={{fontSize: 20, color: "#222222", fontFamily: "Raleway-Italic", marginTop: 4}}>{item.nome}</Text>
+									</View>
 									<Text style={{fontSize: 18, color: "#DB3022", fontFamily: "Raleway-Medium", marginTop: 4}}>R$ {item.preco}</Text>
 								</View>
 							</TouchableOpacity>
